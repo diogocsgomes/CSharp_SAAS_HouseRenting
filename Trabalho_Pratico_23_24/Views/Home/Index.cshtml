@@ -1,0 +1,103 @@
+﻿@{
+	ViewData["Title"] = "Home Page";
+	Layout = "~/Views/Shared/_Layout2.cshtml";
+}
+
+<div id="carouselDestaques" class="carousel slide m-0" data-bs-ride="carousel">
+	<div class="carousel-indicators">
+		<button type="button" data-bs-target="#carouselDestaques" data-bs-slide-to="0"
+				class="active" aria-label="Slide 1" aria-current="true"></button>
+		<button type="button" data-bs-target="#carouselDestaques" data-bs-slide-to="1" aria-
+				label="Slide 2" class=""></button>
+		<button type="button" data-bs-target="#carouselDestaques" data-bs-slide-to="2" aria-
+				label="Slide 3" class=""></button>
+	</div>
+	<div class="carousel-inner">
+		<div class="carousel-item active banner_01">
+			<div class="container">
+				<div class="carousel-caption">
+					<h1 class=" text-warning">Conquiste a sua liberdade!</h1>
+					<p class=" text-white">Mais do que imóveis, oferecemos a base para a sua história.</p>
+					<p><a class="btn btn-lg btn-warning " href="#">Junte-se a nós</a></p>
+				</div>
+			</div>
+		</div>>
+		<div class="carousel-item banner_02">
+			<div class="container">
+				<div class="carousel-caption text-white">
+					<h1>Onde a Elegância Encontra o Conforto</h1>
+					<p>
+						Cada canto é uma história, e cada detalhe é uma expressão de conforto.
+					</p>
+					<p><a class="btn btn-lg btn-success" href="#">Torne-se Cliente!</a></p>
+				</div>
+			</div>
+		</div>
+		<div class="carousel-item banner_03">
+			<div class="container">
+				<div class="carousel-caption text-end">
+					<h1>Os melhores Imóveis.</h1>
+					<p>Do primeiro lar ao lar dos seus sonhos, temos a chave para a sua jornada imobiliária.</p>
+					<p><a class="btn btn-lg btn-primary" href="#">Descobrir</a></p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<button class="carousel-control-prev" type="button" data-bs-target="#carouselDestaques"
+			data-bs-slide="prev">
+		<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+		<span class="visually-hidden">Previous</span>
+	</button>
+	<button class="carousel-control-next" type="button" data-bs-target="#carouselDestaques"
+			data-bs-slide="next">
+		<span class="carousel-control-next-icon" aria-hidden="true"></span>
+		<span class="visually-hidden">Next</span>
+	</button>
+</div>
+<div class="container bg-white">
+	<div class="pricing-header p-3 pb-md-4 mx-auto text-center">
+		<h1 class="display-4 fw-normal">Propriedades & Ofertas</h1>
+		<p class="fs-5 text-muted">
+			Na nossa agência, pode explorar uma variedade de residências, desde apartamentos acolhedores até luxuosas moradias, de acordo com as suas preferências e orçamento.
+			Oferecemos opções para todos os estilos de vida.
+			Pode adquirir uma propriedade completa ou escolher pacotes personalizados até encontrar a casa perfeita para si.
+		</p>
+	</div>
+	<div class="row row-cols-1 row-cols-md-3 mb-3 text-center">
+		@if (Model != null)
+		{
+			@foreach (var habitacao in Model)
+			{
+				if (habitacao != null && habitacao.Ativo == true)
+				{
+					<div class="col">
+						<div class="card mb-4 rounded-3 shadow-sm">
+							<div class="card-header py-3">
+								<h4 class="my-0 fw-normal">@habitacao.Tipo</h4>
+							</div>
+							<div class="card-body">
+								<h1 class="card-title pricing-card-title">
+									@habitacao.CustoArrendamento €<small class="text-muted fw-light"></small>
+								</h1>
+								<ul class="list-unstyled mt-3 mb-4">
+									<li>@habitacao.Localizacao</li>
+									@* <li>@habitacao.Locador</li> *@
+									<li>@habitacao.AvaliacaoLocador</li>
+								</ul>
+								<button type="button" class="w-100 btn btn-lg btn-outline-primary">
+									<a asp-controller="Habitacao" asp-action="Details" asp-route-id="@habitacao.Id" style="text-decoration: none; color: inherit;">Saber Mais</a>
+								</button>
+							</div>
+						</div>
+					</div>
+				}
+			}
+		}
+	</div>
+
+</div>
+
+
+
+
+

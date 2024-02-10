@@ -1,0 +1,79 @@
+﻿@model Trabalho_Pratico_23_24.Models.Arrendamento
+
+@{
+    ViewData["Title"] = "Create";
+    Layout = "~/Views/Shared/_Layout2.cshtml";
+}
+
+
+
+<h4>Criar Arrendamento</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Create">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="DatraEntrada" class="control-label"></label>
+                <input asp-for="DatraEntrada" class="form-control" />
+                <span asp-validation-for="DatraEntrada" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="DatraSaida" class="control-label"></label>
+                <input asp-for="DatraSaida" class="form-control" />
+                <span asp-validation-for="DatraSaida" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="Locador" class="control-label"></label>
+                <select asp-for="LocadorId" class="form-control" asp-items="ViewBag.Locadores"></select>
+            </div>
+
+
+            @if (User.IsInRole("Funcionario") || User.IsInRole("Gestor"))
+            {
+                <div class="form-group form-check">
+                    <label class="form-check-label">
+                        <input class="form-check-input" asp-for="PorConfirmar" /> @Html.DisplayNameFor(model => model.PorConfirmar)
+                    </label>
+                </div>
+                <div class="form-group form-check">
+                    <label class="form-check-label">
+                        <input class="form-check-input" asp-for="Aceite" /> @Html.DisplayNameFor(model => model.Aceite)
+                    </label>
+                </div>
+                <div class="form-group form-check">
+                    <label class="form-check-label">
+                        <input class="form-check-input" asp-for="EntreguePorCliente" /> @Html.DisplayNameFor(model => model.EntreguePorCliente)
+                    </label>
+                </div>
+                <div class="form-group form-check">
+                    <label class="form-check-label">
+                        <input class="form-check-input" asp-for="RecebidoPeloLocador" /> @Html.DisplayNameFor(model => model.RecebidoPeloLocador)
+                    </label>
+                </div>
+            }
+            @{
+                int habitacaoId = 0;
+                if (int.TryParse(Context.Request.Query["habitacaoId"], out int parsedId))
+                {
+                    habitacaoId = parsedId;
+                }
+            }
+
+            <input type="hidden" name="habitacaoId" value="@habitacaoId" />
+            <br />
+            <div class="form-group">
+                <input type="submit" value="Arrendar" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

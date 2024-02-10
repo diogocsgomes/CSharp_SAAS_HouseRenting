@@ -1,0 +1,73 @@
+﻿@model IEnumerable<Trabalho_Pratico_23_24.Models.CheckOut>
+
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_Layout2.cshtml";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.HoraSaida)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.TemEquipamentosOpcionais)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.EquipamentoOpcionais)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.TemDanos)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Danos)
+            </th>
+            <th>
+                <span>Imagem do Dano</span>
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Observacoes)
+            </th>
+
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.HoraSaida)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TemEquipamentosOpcionais)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.EquipamentoOpcionais)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TemDanos)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Danos)
+            </td>
+            <td>
+                    <img src="../wwwroot/danos/@Html.DisplayFor(modelItem => item.DanosPath)" style="widht:100px; height:100px" />
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Observacoes)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

@@ -1,0 +1,119 @@
+﻿@model IEnumerable<Trabalho_Pratico_23_24.Models.Habitacao>
+
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_Layout2.cshtml";
+}
+
+<h1>Habitações</h1>
+
+@if (User.IsInRole("Funcionario") || User.IsInRole("Gestor"))
+{
+    <div class="col-3">
+        <form asp-action="Index" method="get">
+            <label for="categoriaId">Categoria:</label>
+            <select id="categoriaId" name="categoriaId" class="form-control" asp-items="ViewBag.ListaDeCategorias">
+                <option value="">Todas as Categorias</option>
+            </select>
+
+            <label for="ordenarPor">Ordenar por:</label>
+            <select id="ordenarPor" name="ordenarPor" class="form-control">
+                <option value="">Sem Ordenação</option>
+                <option value="precoAsc">Preço (Ascendente)</option>
+                <option value="precoDesc">Preço (Descendente)</option>
+                @* podemos meter outras opções de ordenção tbm *@
+            </select>
+
+
+            <button type="submit" class="btn btn-primary btn-sm">Filtrar</button>
+        </form>
+    </div>
+
+<div class="col-3">
+    <a class="btn btn-primary btn-sm" asp-action="Index" asp-route-disponivel="Todos">Todos</a> |
+    <a class="btn btn-primary btn-sm" asp-action="Index" asp-route-disponivel="Ativos">Ativos</a> |
+    <a class="btn btn-primary btn-sm" asp-action="Index" asp-route-disponivel="Inativos">Inativos</a>
+</div>
+
+
+    <br />
+    <p>
+        <a class="btn btn-primary btn-sm" asp-action="Create">Adicionar Habitação</a>
+    </p>
+    <p>
+        <a class="btn btn-primary btn-sm" asp-action="ListToAssociate">Adicionar Habitação por Associação</a>
+    </p>
+}
+<table class="table">
+    <thead>
+        <tr>
+            <th style="text-align: center; vertical-align: middle;">Localização</th>
+            <th style="text-align: center; vertical-align: middle;">Tipo</th>
+            <th style="text-align: center; vertical-align: middle;">Custo Arrendamento</th>
+            <th style="text-align: center; vertical-align: middle;">Data Início Contrato</th>
+            <th style="text-align: center; vertical-align: middle;">Data Fim Contrato</th>
+            <th style="text-align: center; vertical-align: middle;">Período Mínimo Arrendamento</th>
+            <th style="text-align: center; vertical-align: middle;">Período Máximo Arrendamento</th>
+            <th style="text-align: center; vertical-align: middle;">Locador</th> 
+            <th style="text-align: center; vertical-align: middle;">Avaliação Locador</th>
+            <th style="text-align: center; vertical-align: middle;">Categoria</th>
+            <th style="text-align: center; vertical-align: middle;">Ativo</th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td class="text-center align-middle">
+                @Html.DisplayFor(modelItem => item.Localizacao)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Tipo)
+            </td>
+            <td class="text-center align-middle">
+                @Html.DisplayFor(modelItem => item.CustoArrendamento) €
+            </td>
+            <td class="text-center align-middle">
+                @Html.DisplayFor(modelItem => item.DataInicioContrato)
+            </td>
+            <td class="text-center align-middle">
+                @Html.DisplayFor(modelItem => item.DataFimContrato)
+            </td>
+                <td class="text-center align-middle">
+                @Html.DisplayFor(modelItem => item.PeriodoMinimoArrendamento)
+            </td>
+            <td class="text-center align-middle">
+                @Html.DisplayFor(modelItem => item.PeriodoMaximoArrendamento)
+            </td>
+            <td class="text-center align-middle">
+                @string.Join(", ", item.Locadores.Select(locador => locador.Nome))
+            </td>
+            <td class="text-center align-middle">
+                @Html.DisplayFor(modelItem => item.AvaliacaoLocador)
+            </td>
+            <td class="text-center align-middle">
+                @Html.DisplayFor(modelItem => item.Categoria.Nome)
+            </td> 
+            <td class="text-center align-middle">
+                @Html.DisplayFor(modelItem => item.Ativo)
+            </td>
+                @if (User.IsInRole("Funcionario") || User.IsInRole("Gestor"))
+                {
+                    <td>
+                        <a asp-action="Edit" asp-route-id="@item.Id">Editar</a> |
+                <a asp-action="Details" asp-route-id="@item.Id">Detalhes</a> |
+                <a asp-action="Delete" asp-route-id="@item.Id">Apagar</a>
+            </td>
+            }
+                @if (User.IsInRole("Cliente") && item.Ativo == true)
+                {
+                    <td>
+                       
+                        <a asp-controller="Arrendamentos"  asp-action="Create" asp-route-habitacaoId="@item.Id">Arrendar</a>
+
+                    </td>
+                }
+
+        </tr>
+}
+    </tbody>
+</table>

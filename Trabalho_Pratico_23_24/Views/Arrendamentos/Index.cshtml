@@ -1,0 +1,192 @@
+﻿@model IEnumerable<Trabalho_Pratico_23_24.Models.Arrendamento>
+
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_Layout2.cshtml";
+}
+
+
+<h1>Arrendamentos</h1>
+
+
+@if (User.IsInRole("Gestor") || User.IsInRole("Funcionario"))
+{
+
+    <div class="col-3">
+        <form asp-action="Index" method="get">
+            <label for="categoriaId">Categoria:</label>
+            <select id="categoriaId" name="categoriaId" class="form-control" asp-items="ViewBag.ListaDeCategorias">
+                <option value="">Todas as Categorias</option>
+            </select>
+
+            <label for="clienteId">Cliente:</label>
+            <select id="clienteId" name="clienteId" class="form-control" asp-items="ViewBag.ListaDeClientes">
+                <option value="">Todos os Clientes</option>
+            </select>
+
+            <label for="habitacaoId">Habitação:</label>
+            <select id="habitacaoId" name="habitacaoId" class="form-control" asp-items="ViewBag.ListaDeHabitacoes">
+                <option value="">Todas as Habitações</option>
+            </select>
+
+            <label for="dataInicio">Data de Início do Contrato:</label>
+            <input type="date" id="dataInicio" name="dataInicio" class="form-control" />
+
+            <label for="dataFim">Data do Fim do Contrato:</label>
+            <input type="date" id="dataFim" name="dataFim" class="form-control" />
+
+            <button type="submit" class="btn btn-primary btn-sm">Filtrar</button>
+        </form>
+    </div>
+
+
+
+    @* <p>
+        <a asp-action="Create">Adcionar Arrendamento</a>
+    </p> *@
+
+    <p>
+        <a class="btn btn-primary btn-sm" asp-action="Index" asp-route-filtro="Todosr">Todos</a> |
+        <a class="btn btn-primary btn-sm" asp-action="Index" asp-route-filtro="PorConfirmar">Por Confirmar</a> | 
+        <a class="btn btn-primary btn-sm" asp-action="Index" asp-route-filtro="Entregue">Entregue</a>
+    </p>
+
+}
+
+<table class="table">
+    <thead>
+        <tr>
+            <th style="text-align: center; vertical-align: middle;">Data Entrada</th>
+            <th style="text-align: center; vertical-align: middle;">Data Saída</th>
+            <th style="text-align: center; vertical-align: middle;">Por Confirmar</th>
+            <th style="text-align: center; vertical-align: middle;">Aceite</th>
+            <th style="text-align: center; vertical-align: middle;">Email do Cliente</th>
+            <th style="text-align: center; vertical-align: middle;">Localização do Imóvel</th>
+            <th style="text-align: center; vertical-align: middle;">Categoria</th>
+            
+           
+            @if (User.IsInRole("Cliente"))
+            {
+                <th style="text-align: center; vertical-align: middle;">Locadores</th>
+                <th style="text-align: center; vertical-align: middle;">Entregue (em avaliação)</th>
+                <th style="text-align: center; vertical-align: middle;">Entrega Conluída</th>
+
+            }
+
+            @if (User.IsInRole("Gestor") || User.IsInRole("Funcionario"))
+            {
+                <th style="text-align: center; vertical-align: middle;">Locadores</th>
+                <th style="text-align: center; vertical-align: middle;">Entregue pelo Cliente</th>
+                <th style="text-align: center; vertical-align: middle;">Check-out</th>
+            }
+       
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+
+ 
+            <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.DatraEntrada)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DatraSaida)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.PorConfirmar)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Aceite)
+            </td>
+            <td>
+                @item.Cliente.Email
+            </td>
+            <td>
+                @item.Imovel.Localizacao
+            </td>
+             <td>
+                @item.Imovel.Categoria.Nome
+            </td>
+            <td>
+                @string.Join(", ", item.Imovel.Locadores.Select(locador => locador.Nome))
+            </td>
+   
+             <td>
+                  @Html.DisplayFor(modelItem => item.EntreguePorCliente)
+             </td>
+             <td>
+                 @Html.DisplayFor(modelItem => item.RecebidoPeloLocador)
+             </td>
+               
+
+
+            @if(User.IsInRole("Gestor") || User.IsInRole("Funcionario"))
+            {
+                if(item.RecebidoPeloLocador == false)
+                {
+                    
+                    if (item.EntreguePorCliente == false)
+                    {
+                            if(item.Aceite == false)
+                            {
+                                <td>
+                                    <a asp-controller="CheckIns" asp-action="Create" asp-route-id="@item.Id">Aceitar</a>
+                                    |
+                                    <a asp-controller="Arrendamentos" asp-action="RejeitarArrendamento" asp-route-id="@item.Id">Rejeitar</a>
+                                </td>
+                            }
+                            else
+                            {
+                                <td>
+                                    <a asp-controller="Arrendamentos" asp-action="RejeitarArrendamento" asp-route-id="@item.Id">Rejeitar</a>
+                                </td>
+                            }
+                            
+                    }
+                    else{
+                        <td>
+                           <a asp-controller="CheckOuts" asp-action="Create" asp-route-id="@item.Id">Check-Out</a>
+                        </td>
+                    }
+
+                }
+                    else
+                    {
+                        <td>
+                            <a asp-action="Details" asp-route-id="@item.Id">Detalhes</a>
+                        </td>
+                    }
+            
+            }
+
+           @if(User.IsInRole("Cliente"))
+           {
+               if (item.RecebidoPeloLocador == false)
+               {
+                   if(item.Aceite == true)
+                   {
+                       <td>
+                       <a  asp-controller="Arrendamentos" asp-action="ClienteEntrega" asp-route-id="@item.Id">Entregar</a>
+                        </td>
+                   }
+
+                    else
+                    {
+                      <td>
+                        <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
+                        <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
+                        <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
+                    </td>
+                    }
+               }
+               else{
+                   <td>
+                        <a asp-action="Details" asp-route-id="@item.Id">Details</a>
+                   </td>
+               }
+           }
+        </tr>
+}
+    </tbody>
+</table>

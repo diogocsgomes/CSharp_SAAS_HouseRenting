@@ -1,0 +1,68 @@
+﻿@model IEnumerable<Trabalho_Pratico_23_24.Models.Locador>
+
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_Layout2.cshtml";
+}
+
+<h1>Locadores</h1>
+
+<p>
+    <a asp-action="Create">Adicionar Locador</a>
+</p>
+
+
+<p>
+    <form asp-action="Search" method="post" accept-charset="UTF-8">
+        <label>Pesquisa de Locador</label>
+        <input type="text" placeholder="Locador a pesquisar" name="TextoAPesquisar" />
+        <button type="submit">Pesquisar</button>
+    </form>
+    
+
+
+</p>
+
+<p>
+    <a asp-action="Index">Todos</a> |
+    <a asp-action="Index" asp-route-disponivel="true">Activos</a> |
+    <a asp-action="Index" asp-route-disponivel="false">Inativos</a>
+</p>
+
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Nome)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.N_Telefone)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Email)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Nome)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.N_Telefone)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Email)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

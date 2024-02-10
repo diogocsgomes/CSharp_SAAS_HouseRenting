@@ -1,0 +1,23 @@
+﻿@model IEnumerable<Trabalho_Pratico_23_24.Models.Habitacao>
+@{
+    ViewData["Title"] = "ErroPesquisa";
+    Layout = "~/Views/Shared/_Layout2.cshtml";
+}
+
+<h2>Resultados de Pesquisa para:</h2>
+<div>
+    <h6>
+        <strong><u>Localização:</u></strong> @ViewBag.Localizacao <strong> | </strong> <strong><u>Tipo de Habitação:</u></strong> @ViewBag.TipoHabitacao |
+        <strong><u>Data de Início do Contrato:</u></strong> @ViewBag.DataInicio <strong> | </strong>
+        <strong><u>Data do Fim do Contrato:</u></strong> @ViewBag.DataFim <strong> | </strong>
+        <strong><u>Período Mínimo de Arrendamento:</u></strong> @ViewBag.PeriodoMinimo
+    </h6>
+</div>
+<br />
+
+
+<div class="mensagem-de-erro">
+    <h6>
+        Não foi possível encontrar Habitações com os dados introduzidos. Por favor, reveja a sua pesquisa.
+    </h6>
+</div>

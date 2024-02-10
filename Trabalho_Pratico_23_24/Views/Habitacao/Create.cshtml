@@ -1,0 +1,74 @@
+﻿@model Trabalho_Pratico_23_24.Models.Habitacao
+
+@{
+    ViewData["Title"] = "Create";
+    Layout = "~/Views/Shared/_Layout2.cshtml";
+}
+
+<h1>Create</h1>
+
+<h4>Habitacao</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Create">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="Localizacao" class="control-label"></label>
+                <input asp-for="Localizacao" class="form-control" />
+                <span asp-validation-for="Localizacao" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Tipo" class="control-label"></label>
+                <input asp-for="Tipo" class="form-control" />
+                <span asp-validation-for="Tipo" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CustoArrendamento" class="control-label"></label>
+                <input asp-for="CustoArrendamento" class="form-control" />
+                <span asp-validation-for="CustoArrendamento" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="DataInicioContrato" class="control-label"></label>
+                <input asp-for="DataInicioContrato" class="form-control" />
+                <span asp-validation-for="DataInicioContrato" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="DataFimContrato" class="control-label"></label>
+                <input asp-for="DataFimContrato" class="form-control" />
+                <span asp-validation-for="DataFimContrato" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="PeriodoMinimoArrendamento" class="control-label"></label>
+                <input asp-for="PeriodoMinimoArrendamento" class="form-control" />
+                <span asp-validation-for="PeriodoMinimoArrendamento" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="PeriodoMaximoArrendamento" class="control-label"></label>
+                <input asp-for="PeriodoMaximoArrendamento" class="form-control" />
+                <span asp-validation-for="PeriodoMaximoArrendamento" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="AvaliacaoLocador" class="control-label"></label>
+                <input asp-for="AvaliacaoLocador" class="form-control" />
+                <span asp-validation-for="AvaliacaoLocador" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Categoria" class="control-label"></label>
+                <select asp-for="CategoriaId" class ="form-control" asp-items="ViewBag.CategoriaId"></select>
+            </div>
+
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

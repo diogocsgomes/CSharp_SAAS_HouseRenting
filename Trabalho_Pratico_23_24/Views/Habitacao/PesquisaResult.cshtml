@@ -1,0 +1,53 @@
+﻿@model IEnumerable<Trabalho_Pratico_23_24.Models.Habitacao>
+@{
+    ViewData["Title"] = "PesquisaResult";
+    Layout = "~/Views/Shared/_Layout2.cshtml";
+}
+
+@* Para obteres os valores passados para o controller que eram os filtros da pesquisa
+usas-te o @ViewBag *@
+
+
+<h2>Resultados de Pesquisa para:</h2>
+<div>
+    <h6>
+        <strong><u>Localização:</u></strong> @ViewBag.Localizacao <strong> | </strong> <strong><u>Tipo de Habitação:</u></strong> @ViewBag.TipoHabitacao |
+        <strong><u>Data de Início do Contrato:</u></strong> @ViewBag.DataInicio <strong> | </strong>
+        <strong><u>Data do Fim do Contrato:</u></strong> @ViewBag.DataFim <strong> | </strong>
+        <strong><u>Período Mínimo de Arrendamento:</u></strong> @ViewBag.PeriodoMinimo
+    </h6>
+</div>
+<br />
+
+<table class="table">
+    <thead>
+        <tr>
+            <th style="text-align: center; vertical-align: middle;">Custo Arrendamento</th>
+            <th style="text-align: center; vertical-align: middle;">Locador</th>
+            <th style="text-align: center; vertical-align: middle;">Avaliação Locador</th>
+        </tr>
+
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td class="text-center">
+                    @Html.DisplayFor(modelItem => item.CustoArrendamento) €
+                </td>
+
+                <td class="text-center">
+
+                    @string.Join(", ", item.Locadores.Select(locador => locador.Nome))
+
+                </td>
+                                
+
+                <td class="text-center">
+                    @Html.DisplayFor(modelItem => item.AvaliacaoLocador)
+                </td>
+
+            </tr>
+        }
+    </tbody>
+</table>

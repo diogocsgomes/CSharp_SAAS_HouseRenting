@@ -1,0 +1,60 @@
+﻿@model Trabalho_Pratico_23_24.Models.Arrendamento
+
+@{
+    ViewData["Title"] = "Details";
+    Layout = "~/Views/Shared/_Layout2.cshtml";
+}
+
+<h1>Details</h1>
+
+<div>
+    <h4>Arrendamento</h4>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.DatraEntrada)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.DatraEntrada)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.DatraSaida)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.DatraSaida)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.PorConfirmar)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.PorConfirmar)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Aceite)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Aceite)
+        </dd>
+
+        @if (User.IsInRole("Gestor") || User.IsInRole("Funcionario"))
+        {
+            <dt class="col-sm-2">
+                @Html.DisplayNameFor(model => model.EntreguePorCliente)
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.EntreguePorCliente)
+            </dd>
+            <dt class="col-sm-2">
+                @Html.DisplayNameFor(model => model.RecebidoPeloLocador)
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.RecebidoPeloLocador)
+            </dd>
+        }
+
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model?.Id">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>

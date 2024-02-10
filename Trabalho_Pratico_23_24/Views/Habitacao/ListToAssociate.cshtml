@@ -1,0 +1,92 @@
+﻿@model IEnumerable<Trabalho_Pratico_23_24.Models.Habitacao>
+
+@{
+    ViewData["Title"] = "ListToAssociate";
+    Layout = "~/Views/Shared/_Layout2.cshtml";
+}
+
+<h1>Imoveis para Associar</h1>
+
+<p>
+    
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Localizacao)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Tipo)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CustoArrendamento)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.DataInicioContrato)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.DataFimContrato)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.PeriodoMinimoArrendamento)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.PeriodoMaximoArrendamento)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.AvaliacaoLocador)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Categoria)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Ativo)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Localizacao)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Tipo)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.CustoArrendamento)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DataInicioContrato)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DataFimContrato)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.PeriodoMinimoArrendamento)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.PeriodoMaximoArrendamento)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.AvaliacaoLocador)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Categoria.Descricao)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Ativo)
+            </td>
+            <td>
+                    <a asp-action="Associate" asp-route-id="@item.Id">Associar</a>
+              <!---  <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
+              -->
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

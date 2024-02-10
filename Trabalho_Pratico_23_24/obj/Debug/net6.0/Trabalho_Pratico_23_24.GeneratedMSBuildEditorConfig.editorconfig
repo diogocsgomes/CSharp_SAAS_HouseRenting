@@ -1,0 +1,272 @@
+is_global = true
+build_property.TargetFramework = net6.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = Trabalho_Pratico_23_24
+build_property.RootNamespace = Trabalho_Pratico_23_24
+build_property.ProjectDir = C:\Users\diogo\OneDrive\Ambiente de Trabalho\Teste\C-Sharp_SAAS_HouseRenting\Trabalho_Pratico_23_24\
+build_property.RazorLangVersion = 6.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = C:\Users\diogo\OneDrive\Ambiente de Trabalho\Teste\C-Sharp_SAAS_HouseRenting\Trabalho_Pratico_23_24
+build_property._RazorSourceGeneratorDebug = 
+
+[C:/Users/diogo/OneDrive/Ambiente de Trabalho/Teste/C-Sharp_SAAS_HouseRenting/Trabalho_Pratico_23_24/Areas/Identity/Pages/Account/Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxMb2dpbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/diogo/OneDrive/Ambiente de Trabalho/Teste/C-Sharp_SAAS_HouseRenting/Trabalho_Pratico_23_24/Areas/Identity/Pages/Account/Manage/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxNYW5hZ2VcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/diogo/OneDrive/Ambiente de Trabalho/Teste/C-Sharp_SAAS_HouseRenting/Trabalho_Pratico_23_24/Areas/Identity/Pages/Account/Manage/_ManageNav.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxNYW5hZ2VcX01hbmFnZU5hdi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/diogo/OneDrive/Ambiente de Trabalho/Teste/C-Sharp_SAAS_HouseRenting/Trabalho_Pratico_23_24/Areas/Identity/Pages/Account/Manage/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxNYW5hZ2VcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/diogo/OneDrive/Ambiente de Trabalho/Teste/C-Sharp_SAAS_HouseRenting/Trabalho_Pratico_23_24/Areas/Identity/Pages/Account/Register.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxSZWdpc3Rlci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/diogo/OneDrive/Ambiente de Trabalho/Teste/C-Sharp_SAAS_HouseRenting/Trabalho_Pratico_23_24/Areas/Identity/Pages/Account/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxfVmlld0ltcG9ydHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/diogo/OneDrive/Ambiente de Trabalho/Teste/C-Sharp_SAAS_HouseRenting/Trabalho_Pratico_23_24/Areas/Identity/Pages/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcX1ZhbGlkYXRpb25TY3JpcHRzUGFydGlhbC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/diogo/OneDrive/Ambiente de Trabalho/Teste/C-Sharp_SAAS_HouseRenting/Trabalho_Pratico_23_24/Areas/Identity/Pages/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/diogo/OneDrive/Ambiente de Trabalho/Teste/C-Sharp_SAAS_HouseRenting/Trabalho_Pratico_23_24/Areas/Identity/Pages/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/diogo/OneDrive/Ambiente de Trabalho/Teste/C-Sharp_SAAS_HouseRenting/Trabalho_Pratico_23_24/Views/Arrendamentos/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXJyZW5kYW1lbnRvc1xDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/diogo/OneDrive/Ambiente de Trabalho/Teste/C-Sharp_SAAS_HouseRenting/Trabalho_Pratico_23_24/Views/Arrendamentos/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXJyZW5kYW1lbnRvc1xEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/diogo/OneDrive/Ambiente de Trabalho/Teste/C-Sharp_SAAS_HouseRenting/Trabalho_Pratico_23_24/Views/Arrendamentos/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXJyZW5kYW1lbnRvc1xEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/diogo/OneDrive/Ambiente de Trabalho/Teste/C-Sharp_SAAS_HouseRenting/Trabalho_Pratico_23_24/Views/Arrendamentos/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXJyZW5kYW1lbnRvc1xFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/diogo/OneDrive/Ambiente de Trabalho/Teste/C-Sharp_SAAS_HouseRenting/Trabalho_Pratico_23_24/Views/Arrendamentos/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXJyZW5kYW1lbnRvc1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/diogo/OneDrive/Ambiente de Trabalho/Teste/C-Sharp_SAAS_HouseRenting/Trabalho_Pratico_23_24/Views/Categorias/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0ZWdvcmlhc1xDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/diogo/OneDrive/Ambiente de Trabalho/Teste/C-Sharp_SAAS_HouseRenting/Trabalho_Pratico_23_24/Views/Categorias/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0ZWdvcmlhc1xEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/diogo/OneDrive/Ambiente de Trabalho/Teste/C-Sharp_SAAS_HouseRenting/Trabalho_Pratico_23_24/Views/Categorias/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0ZWdvcmlhc1xEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/diogo/OneDrive/Ambiente de Trabalho/Teste/C-Sharp_SAAS_HouseRenting/Trabalho_Pratico_23_24/Views/Categorias/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0ZWdvcmlhc1xFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/diogo/OneDrive/Ambiente de Trabalho/Teste/C-Sharp_SAAS_HouseRenting/Trabalho_Pratico_23_24/Views/Categorias/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0ZWdvcmlhc1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/diogo/OneDrive/Ambiente de Trabalho/Teste/C-Sharp_SAAS_HouseRenting/Trabalho_Pratico_23_24/Views/CheckIns/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2hlY2tJbnNcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/diogo/OneDrive/Ambiente de Trabalho/Teste/C-Sharp_SAAS_HouseRenting/Trabalho_Pratico_23_24/Views/CheckIns/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2hlY2tJbnNcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/diogo/OneDrive/Ambiente de Trabalho/Teste/C-Sharp_SAAS_HouseRenting/Trabalho_Pratico_23_24/Views/CheckIns/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2hlY2tJbnNcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/diogo/OneDrive/Ambiente de Trabalho/Teste/C-Sharp_SAAS_HouseRenting/Trabalho_Pratico_23_24/Views/CheckIns/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2hlY2tJbnNcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/diogo/OneDrive/Ambiente de Trabalho/Teste/C-Sharp_SAAS_HouseRenting/Trabalho_Pratico_23_24/Views/CheckIns/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2hlY2tJbnNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/diogo/OneDrive/Ambiente de Trabalho/Teste/C-Sharp_SAAS_HouseRenting/Trabalho_Pratico_23_24/Views/CheckOuts/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2hlY2tPdXRzXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/diogo/OneDrive/Ambiente de Trabalho/Teste/C-Sharp_SAAS_HouseRenting/Trabalho_Pratico_23_24/Views/CheckOuts/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2hlY2tPdXRzXERlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/diogo/OneDrive/Ambiente de Trabalho/Teste/C-Sharp_SAAS_HouseRenting/Trabalho_Pratico_23_24/Views/CheckOuts/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2hlY2tPdXRzXERldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/diogo/OneDrive/Ambiente de Trabalho/Teste/C-Sharp_SAAS_HouseRenting/Trabalho_Pratico_23_24/Views/CheckOuts/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2hlY2tPdXRzXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/diogo/OneDrive/Ambiente de Trabalho/Teste/C-Sharp_SAAS_HouseRenting/Trabalho_Pratico_23_24/Views/CheckOuts/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2hlY2tPdXRzXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/diogo/OneDrive/Ambiente de Trabalho/Teste/C-Sharp_SAAS_HouseRenting/Trabalho_Pratico_23_24/Views/Funcionarios/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRnVuY2lvbmFyaW9zXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/diogo/OneDrive/Ambiente de Trabalho/Teste/C-Sharp_SAAS_HouseRenting/Trabalho_Pratico_23_24/Views/Funcionarios/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRnVuY2lvbmFyaW9zXERlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/diogo/OneDrive/Ambiente de Trabalho/Teste/C-Sharp_SAAS_HouseRenting/Trabalho_Pratico_23_24/Views/Funcionarios/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRnVuY2lvbmFyaW9zXERldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/diogo/OneDrive/Ambiente de Trabalho/Teste/C-Sharp_SAAS_HouseRenting/Trabalho_Pratico_23_24/Views/Funcionarios/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRnVuY2lvbmFyaW9zXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/diogo/OneDrive/Ambiente de Trabalho/Teste/C-Sharp_SAAS_HouseRenting/Trabalho_Pratico_23_24/Views/Funcionarios/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRnVuY2lvbmFyaW9zXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/diogo/OneDrive/Ambiente de Trabalho/Teste/C-Sharp_SAAS_HouseRenting/Trabalho_Pratico_23_24/Views/Gestores/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcR2VzdG9yZXNcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/diogo/OneDrive/Ambiente de Trabalho/Teste/C-Sharp_SAAS_HouseRenting/Trabalho_Pratico_23_24/Views/Gestores/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcR2VzdG9yZXNcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/diogo/OneDrive/Ambiente de Trabalho/Teste/C-Sharp_SAAS_HouseRenting/Trabalho_Pratico_23_24/Views/Gestores/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcR2VzdG9yZXNcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/diogo/OneDrive/Ambiente de Trabalho/Teste/C-Sharp_SAAS_HouseRenting/Trabalho_Pratico_23_24/Views/Gestores/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcR2VzdG9yZXNcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/diogo/OneDrive/Ambiente de Trabalho/Teste/C-Sharp_SAAS_HouseRenting/Trabalho_Pratico_23_24/Views/Gestores/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcR2VzdG9yZXNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/diogo/OneDrive/Ambiente de Trabalho/Teste/C-Sharp_SAAS_HouseRenting/Trabalho_Pratico_23_24/Views/Habitacao/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSGFiaXRhY2FvXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/diogo/OneDrive/Ambiente de Trabalho/Teste/C-Sharp_SAAS_HouseRenting/Trabalho_Pratico_23_24/Views/Habitacao/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSGFiaXRhY2FvXERlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/diogo/OneDrive/Ambiente de Trabalho/Teste/C-Sharp_SAAS_HouseRenting/Trabalho_Pratico_23_24/Views/Habitacao/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSGFiaXRhY2FvXERldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/diogo/OneDrive/Ambiente de Trabalho/Teste/C-Sharp_SAAS_HouseRenting/Trabalho_Pratico_23_24/Views/Habitacao/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSGFiaXRhY2FvXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/diogo/OneDrive/Ambiente de Trabalho/Teste/C-Sharp_SAAS_HouseRenting/Trabalho_Pratico_23_24/Views/Habitacao/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSGFiaXRhY2FvXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/diogo/OneDrive/Ambiente de Trabalho/Teste/C-Sharp_SAAS_HouseRenting/Trabalho_Pratico_23_24/Views/Habitacao/ListToAssociate.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSGFiaXRhY2FvXExpc3RUb0Fzc29jaWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/diogo/OneDrive/Ambiente de Trabalho/Teste/C-Sharp_SAAS_HouseRenting/Trabalho_Pratico_23_24/Views/Habitacao/PesquisaResult.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSGFiaXRhY2FvXFBlc3F1aXNhUmVzdWx0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/diogo/OneDrive/Ambiente de Trabalho/Teste/C-Sharp_SAAS_HouseRenting/Trabalho_Pratico_23_24/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/diogo/OneDrive/Ambiente de Trabalho/Teste/C-Sharp_SAAS_HouseRenting/Trabalho_Pratico_23_24/Views/Home/Pesquisar.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQZXNxdWlzYXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/diogo/OneDrive/Ambiente de Trabalho/Teste/C-Sharp_SAAS_HouseRenting/Trabalho_Pratico_23_24/Views/Home/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/diogo/OneDrive/Ambiente de Trabalho/Teste/C-Sharp_SAAS_HouseRenting/Trabalho_Pratico_23_24/Views/Home/SobreNos.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxTb2JyZU5vcy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/diogo/OneDrive/Ambiente de Trabalho/Teste/C-Sharp_SAAS_HouseRenting/Trabalho_Pratico_23_24/Views/Locadores/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9jYWRvcmVzXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/diogo/OneDrive/Ambiente de Trabalho/Teste/C-Sharp_SAAS_HouseRenting/Trabalho_Pratico_23_24/Views/Locadores/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9jYWRvcmVzXERlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/diogo/OneDrive/Ambiente de Trabalho/Teste/C-Sharp_SAAS_HouseRenting/Trabalho_Pratico_23_24/Views/Locadores/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9jYWRvcmVzXERldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/diogo/OneDrive/Ambiente de Trabalho/Teste/C-Sharp_SAAS_HouseRenting/Trabalho_Pratico_23_24/Views/Locadores/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9jYWRvcmVzXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/diogo/OneDrive/Ambiente de Trabalho/Teste/C-Sharp_SAAS_HouseRenting/Trabalho_Pratico_23_24/Views/Locadores/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9jYWRvcmVzXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/diogo/OneDrive/Ambiente de Trabalho/Teste/C-Sharp_SAAS_HouseRenting/Trabalho_Pratico_23_24/Views/Locadores/Search.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9jYWRvcmVzXFNlYXJjaC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/diogo/OneDrive/Ambiente de Trabalho/Teste/C-Sharp_SAAS_HouseRenting/Trabalho_Pratico_23_24/Views/Shared/ErroPesquisa.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9QZXNxdWlzYS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/diogo/OneDrive/Ambiente de Trabalho/Teste/C-Sharp_SAAS_HouseRenting/Trabalho_Pratico_23_24/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/diogo/OneDrive/Ambiente de Trabalho/Teste/C-Sharp_SAAS_HouseRenting/Trabalho_Pratico_23_24/Views/Shared/_Layout2.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQyLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/diogo/OneDrive/Ambiente de Trabalho/Teste/C-Sharp_SAAS_HouseRenting/Trabalho_Pratico_23_24/Views/Shared/_LoginPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9Mb2dpblBhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/diogo/OneDrive/Ambiente de Trabalho/Teste/C-Sharp_SAAS_HouseRenting/Trabalho_Pratico_23_24/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/diogo/OneDrive/Ambiente de Trabalho/Teste/C-Sharp_SAAS_HouseRenting/Trabalho_Pratico_23_24/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/diogo/OneDrive/Ambiente de Trabalho/Teste/C-Sharp_SAAS_HouseRenting/Trabalho_Pratico_23_24/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/diogo/OneDrive/Ambiente de Trabalho/Teste/C-Sharp_SAAS_HouseRenting/Trabalho_Pratico_23_24/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-omzhhqzc0n

@@ -1,0 +1,92 @@
+﻿@model Trabalho_Pratico_23_24.ViewModels.CheckOutViewModel
+
+@{
+    ViewData["Title"] = "Create";
+    Layout = "~/Views/Shared/_Layout2.cshtml";
+}
+
+<h1>Create</h1>
+
+<h4>CheckOut</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <p>@ViewBag.sucess</p>
+        <form asp-action="Create" enctype="multipart/form-data">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="HoraSaida" class="control-label"></label>
+                <input asp-for="HoraSaida" class="form-control" />
+                <span asp-validation-for="HoraSaida" class="text-danger"></span>
+            </div>
+            <div class="form-group form-check">
+                <label class="form-check-label">
+                    <input class="form-check-input" asp-for="TemEquipamentosOpcionais" id="temEquipamentosOpcionaisCheckbox" />
+                    @Html.DisplayNameFor(model => model.TemEquipamentosOpcionais)
+                </label>
+            </div>
+
+            <div class="form-group" id="equipamentosOpcionaisGroup" style="display:none;">
+                <label asp-for="EquipamentoOpcionais" class="control-label"></label>
+                <input asp-for="EquipamentoOpcionais" class="form-control" />
+                <span asp-validation-for="EquipamentoOpcionais" class="text-danger"></span>
+            </div>
+            <div class="form-group form-check">
+                <label class="form-check-label">
+                    <input class="form-check-input" asp-for="TemDanos" id="temDanosCheckbox" />
+                    @Html.DisplayNameFor(model => model.TemDanos)
+                </label>
+            </div>
+
+            <div class="form-group" id="danosGroup" style="display:none;">
+                <label asp-for="Danos" class="control-label"></label>
+                <input asp-for="Danos" class="form-control" />
+                <span asp-validation-for="Danos" class="text-danger"></span>
+            </div>
+
+            <div class="form-group" id="danosImagemGroup" style="display:none;">
+                <label asp-for="DanosImagem" class="control-label"></label>
+                <input asp-for="DanosImagem" multiple class="form-control" />
+                <span asp-validation-for="DanosImagem" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Observacoes" class="control-label"></label>
+                <input asp-for="Observacoes" class="form-control" />
+                <span asp-validation-for="Observacoes" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    <script>
+        // Captura a referência à checkbox e aos grupos de campos
+        var temDanosCheckbox = document.getElementById('temDanosCheckbox');
+        var danosGroup = document.getElementById('danosGroup');
+        var danosImagemGroup = document.getElementById('danosImagemGroup');
+
+        // Adiciona um ouvinte de evento à checkbox
+        temDanosCheckbox.addEventListener('change', function () {
+            // Mostra ou oculta os grupos de campos com base no estado da checkbox
+            danosGroup.style.display = temDanosCheckbox.checked ? 'block' : 'none';
+            danosImagemGroup.style.display = temDanosCheckbox.checked ? 'block' : 'none';
+        });
+        // Captura a referência à checkbox e ao grupo de campos
+        var temEquipamentosOpcionaisCheckbox = document.getElementById('temEquipamentosOpcionaisCheckbox');
+        var equipamentosOpcionaisGroup = document.getElementById('equipamentosOpcionaisGroup');
+
+        // Adiciona um ouvinte de evento à checkbox
+        temEquipamentosOpcionaisCheckbox.addEventListener('change', function () {
+            // Mostra ou oculta o grupo de campos com base no estado da checkbox
+            equipamentosOpcionaisGroup.style.display = temEquipamentosOpcionaisCheckbox.checked ? 'block' : 'none';
+        });
+    </script>
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
